@@ -50,7 +50,8 @@ class AgendaController extends Controller {
             $task->email = $_POST["email"];
             $task->direccion = $_POST["direccion"];
             $task->save(); // Guarda el nuevo contacto
-            header("Location: /agenda");
+            header("Location: " . BASE_URL . "agenda");
+
             exit();
         }
         $this->view("nuevoContacto"); // Muestra la vista para crear un nuevo contacto

@@ -3,21 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="<?= BASE_URL?>css/style.css">
+    <link rel="stylesheet" href="<?= BASE_URL ?>assets/css/style.css">
     <title>Nuevo Contacto</title>
 </head>
 <body>
-    <h3>Nueva Contacto</h3>
-    <form action="" method="post">
-       <input type="text" name="nombre" placeholder ="nombre"> 
-       <input type="text" name="telefono" placeholder="telefono" required>
-       <input type="text" name="email" placeholder ="email">
-       <input type="text" name="direccion" placeholder ="direccion">
-
-
-   
-        <input type="submit" value="Agregar Contacto">
-
+    <h1>Nuevo Contacto</h1>
+    <form action='<?= BASE_URL ?>agenda/new' method='post'>
+        <input type="text" name="nombre" placeholder="Nombre" required>
+        <input type="text" name="telefono" placeholder="Teléfono" required>
+        <input type="email" name="email" placeholder="Email" required>
+        <input type="text" name="direccion" placeholder="Dirección" required>
+        <input type='submit' value='Guardar contacto'>
     </form>
 </body>
 </html>
